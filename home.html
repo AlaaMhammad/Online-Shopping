@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./img/logo-web.png" type="image/x-icon">
+  <title>Online Shopping</title>
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/swiper-bundle.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/css/intlTelInput.css">
+  <link rel="stylesheet" href="css/min.css">
+</head>
+<body class="position-relative">
+  <!-- start header -->
+  <header>
+    <nav class="navbar navbar-expand-lg mt-3 fixed-top pt-5 pt-lg-3 mt-auto ">
+      <div class="container position-relative">
+        <img src="img/logo.svg" alt="logo" class="me-lg-3 img">
+        <img src="img/logo2.png" alt="logo" class="me-lg-3 img2">
+        <a class="navbar-brand" href="#home.html">E-Shop</a>
+        <button class="navbar-toggler ms-auto " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon "></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto me-auto mb-lg-0 ">
+            <li class="nav-item">
+              <a class="nav-link men " aria-current="page" >Men</a>
+            </li>
+            <li class="nav-item mb-3 mb-lg-0">
+              <a class="nav-link " href="#">Women</a>
+            </li>
+            <li class="nav-item mb-3 mb-lg-0">
+              <a class="nav-link" href="#">Kids</a>
+            </li>
+          </ul>
+            <i class="fa-solid fa-user  position-absolute end-0 " data-bs-toggle="modal" data-bs-target="#login"></i>
+        </div>
+        <div class=" icon  ">
+          <i class="fa-solid fa-magnifying-glass me-3  pointer-event"></i>
+          <i class="fa-solid fa-cart-shopping me-lg-4  pointer-event "></i>
+          <div class="number-icon translate-middle">0</div>
+        </div>
+      </div>
+    </nav>
+    <div class="slider-container " data-bs-ride="carousel">
+      <div class="slider-number" id="slider-number"></div>
+      <img src="img/img-header1.png" alt="pic" class="img-fluid active carousel-item ">
+      <img src="img/img-header2.png" alt="pic" class="img-fluid carousel-item">
+      <img src="img/img-header3.png" alt="pic" class="img-fluid carousel-item">
+    </div>
+    <div class="slider-controls">
+      <span class="prev" id="prev"><i class="fa-solid fa-arrow-left"></i></span>
+      <span class="next active" id="next"><i class="fa-solid fa-arrow-right "></i></span>
+    </div>
+    <div class="text-img">
+      <h1>
+        Sale of the
+        <br>
+        summer
+        <br>
+        collection
+      </h1>
+      <div class="nex-img">
+        <i class="fa-solid fa-arrow-right" id="next"></i>
+        <p>Shop now</p>
+      </div>
+    </div>
+    <div class="cmponet ">
+      <div class="container">
+        <div class="row">
+          <div class="card col-3">
+            <div class="imges">
+              <img src="img/icon-header/icon-header1.svg" alt="logo-1" >
+            </div>
+            <div class="text-card">
+              <h5>Free Shipping</h5>
+              <p>On purchases over $199</p>
+            </div>
+          </div>
+          <div class="card col-3">
+            <div class="imges">
+            <img src="img/icon-header/icon-header2.svg" alt="logo-1" width="40px">
+            </div>
+            <div class="text-card">
+              <h5>99% Satisfied Customers</h5>
+              <p>Our clients' opinions <br> speak for themselves</p>
+            </div>
+          </div>
+          <div class="card col-3">
+            <div class="imges">
+              <img src="img/icon-header/icon-header3.svg" alt="logo-1" >
+            </div>
+            <div class="text-card">
+              <h5>Originality Guaranteed</h5>
+              <p>30 days warranty for each product from our store</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+    <!-- End header -->
+    <menu>
+      <div class="container">
+        <div class="menu-boxs">
+          <div class="box">
+            <div class="btns">
+              <a href="#" class="btn"><h4>Sale</h4></a>
+              <a href="#" class="btn"><h4>Bestsellers</h4></a>
+              <a href="#" class="btn"><h4>Latest Arrivals</h4></a>
+            </div>
+          </div>
+          <div class="box">
+            <h6>Shoese</h6>
+            <div class="btns">
+              <a href="#" class="btn">Lifestyle</a>
+              <a href="#" class="btn">Running</a>
+              <a href="#" class="btn">Soccer</a>
+              <a href="#" class="btn">Basketball</a>
+              <a href="#" class="btn">Football</a>
+              <a href="#" class="btn">Golf</a>
+              <a href="#" class="btn">Baseball</a>
+            </div>
+          </div>
+          <div class="box">
+            <h6>Clothing</h6>
+            <div class="btns">
+              <a href="#" class="btn">Pants</a>
+              <a href="#" class="btn">Hoodies & Sweatshirts</a>
+              <a href="#" class="btn">Jackets & Vests</a>
+              <a href="#" class="btn">Track Suits</a>
+              <a href="#" class="btn">Short Sleeve Shirts</a>
+              <a href="#" class="btn">T-Shirts</a>
+              <a href="#" class="btn">Jerseys</a>
+              <a href="#" class="btn">Shorts</a>
+              <a href="#" class="btn">Jeans</a>
+            </div>
+          </div>
+          <div class="box">
+            <h6>Accesorries</h6>
+            <div class="btns">
+              <a href="#" class="btn">Backpacks</a>
+              <a href="#" class="btn">Caps & Hats</a>
+              <a href="#" class="btn">Watches</a>
+              <a href="#" class="btn">Belts</a>
+              <a href="#" class="btn">Bags</a>
+              <a href="#" class="btn">Wallets & Cases</a>
+              <a href="#" class="btn">Scarves</a>
+              <a href="#" class="btn">Glasses</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </menu>
+    <!-- Start add car  -->
+  <div class="car" id="car">
+    <div class="container">
+      <div class="head-tittle mt-5">
+          <h3>Shopping Cart</h3>
+        <div class="icons">
+        <img src="img/active shop.png" alt="logo" class="img-fluid logo1">
+        <img src="img/noun_delivery_1665162.png" alt="logo" class=" logo2">
+        </div>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Color</th>
+            <th>Size</th>
+            <th>Ammount</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+      <div class="footer">
+        <div class="prev-shoping">
+          <a href="product.html" class="text-black">
+          <i class="fa-solid fa-arrow-left"></i>
+        </a>
+          <p>Continue Shopping</p>
+        </div>
+        <div class="code">
+          <form action="">
+            <input type="text" placeholder="Promo Code" required >
+            <button class="btn send"><i class="fa-solid fa-paper-plane"></i></button>
+          </form>
+        </div>
+        <div class="pric-totle">
+          <p>Total cost : </p>
+          <p>$<span class="totle"></span> </p>
+        </div>
+        <div class="delt">
+          <button type="button" class="btn del" id="deleteAllcar">CHECKOUT</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- End add car  -->
+  <!-- Start news  -->
+  <section class="news">
+  <div class="container">
+    <div class="row">
+      <div class="article1 col-lg-6 mb-3 mb-lg-0">
+        <img src="img/img-news/new1.png" alt="pic-1" class="img-fluid">
+        <div class="text-news">
+          <p>
+            New arrivals <br>
+            are now in!
+          </p>
+          <button class="btn bg-white rounded-5 px-4 me-auto">Show collection</button>
+        </div>
+      </div>
+      <div class="article col-6 col-lg-3">
+        <img src="img/img-news/new2.png" alt="pic-2" class="img-fluid">
+        <div class="text-news">
+          <p>
+            Basic t-shirts <br>
+            $29,99
+          </p>
+          <button class="btn bg-white rounded-5 px-3">More details</button>
+        </div>
+      </div>
+      <div class="article col-6 col-lg-3">
+        <img src="img/img-news/new3.png" alt="pic-3" class="img-fluid">
+        <div class="text-news">
+          <button class="btn bg-danger rounded-5 salery">50%</button>
+          <br>
+          <p>
+            Sale this <br>
+            summer
+          </p>
+          <button class="btn bg-white rounded-5 px-3 ">VIEW ALL</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+  <!-- End news  -->
+  <!-- Start salery  -->
+  <section class="salery">
+    <div class="container">
+      <div class="head">
+        <p>Selected just for you</p>
+        <button class="btn bg-white border-black px-2 rounded-5">Show more</button>
+      </div>
+    <div class="swiper" >
+      <div class="slide-container">
+        <div class="card-wrapper swiper-wrapper">
+          <div class="card swiper-slide" onclick="window.location.href='product.html';">
+            <div class="image-box">
+              <img src="img/salery/img1.png" alt="pic-1" class="img-fluid"/>
+              <span class="btn rounded-5">30%</span>
+            </div>
+            <div class="profile-details">
+              <div class="name-job">
+                <p>T-Shirt Summer Vibes</p>
+                <p class="name job">
+                  <span class="pric me-2"> $ 89.99 </span>
+                  <span class="del">$ 119.99</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image-box">
+              <img src="img/salery/img2.png" alt="pic-2" class="img-fluid"/>
+            </div>
+            <div class="profile-details">
+              <div class="name-job">
+                <p class="name">Loose Knit 3/4 Sleeve</p>
+                <p class="job">$ 119.99</p>
+              </div>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image-box">
+              <img src="img/salery/img3.png" alt="pic-3" class="img-fluid" />
+            </div>
+            <div class="profile-details">
+              <div class="name-job">
+                <p class="name">Basic Slim Fit T-Shirt</p>
+                <p class="job">$ 79.99</p>
+              </div>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image-box">
+              <img src="img/salery/img4.png" alt="pic-4" class="img-fluid"/>
+            </div>
+            <div class="profile-details">
+              <div class="name-job">
+                <p class="name">Loose Textured T-Shirt</p>
+                <p class="job">$ 119.99</p>
+              </div>
+            </div>
+          </div>
+          <div class="card swiper-slide" onclick="window.location.href='product.html';">
+            <div class="image-box">
+              <img src="img/salery/img1.png" alt="pic-1" class="img-fluid"/>
+              <span class="btn rounded-5">30%</span>
+            </div>
+            <div class="profile-details">
+              <div class="name-job">
+                <p>T-Shirt Summer Vibes</p>
+                <p class="name job">
+                  <span class="pric me-2"> $ 89.99 </span>
+                  <span class="del">$ 119.99</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image-box">
+              <img src="img/salery/img2.png" alt="pic-2" class="img-fluid"/>
+            </div>
+            <div class="profile-details">
+              <div class="name-job">
+                <p class="name">Loose Knit 3/4 Sleeve</p>
+                <p class="job">$ 119.99</p>
+              </div>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image-box">
+              <img src="img/salery/img3.png" alt="pic-3" class="img-fluid" />
+            </div>
+            <div class="profile-details">
+              <div class="name-job">
+                <p class="name">Basic Slim Fit T-Shirt</p>
+                <p class="job">$ 79.99</p>
+              </div>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image-box">
+              <img src="img/salery/img4.png" alt="pic-4" class="img-fluid"/>
+            </div>
+            <div class="profile-details">
+              <div class="name-job">
+                <p class="name">Loose Textured T-Shirt</p>
+                <p class="job">$ 119.99</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next swiper-navBtn "></div>
+      <div class="swiper-button-prev swiper-navBtn"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+  <!-- End salery  -->
+  <!-- Start cmponet  -->
+  <section class="cmponet">
+    <div class="container">
+      <div class="head">
+        <p>Why should you choose us?</p>
+      </div>
+      <div class="row row-cols-2 ">
+        <div class="card col-lg-3">
+          <div class="imges">
+            <img src="img/cmponet/logo1.png" alt="logo-1" width="40px" >
+          </div>
+          <div class="text-card">
+            <h5>Free Shipping</h5>
+            <p>
+              All purchases over $199 are eligible for
+              free shipping via USPS First Class Mail.
+            </p>
+          </div>
+        </div>
+        <div class="card col-lg-3">
+          <div class="imges">
+          <img src="img/cmponet/logo2.png" alt="logo-2" width="40px">
+          </div>
+          <div class="text-card">
+            <h5>Easy Payments</h5>
+            <p>
+              All payments are processed instantly
+              over a secure payment protocol.
+            </p>
+          </div>
+        </div>
+        <div class="card col-lg-3">
+          <div class="imges">
+            <img src="img/cmponet/logo3.png" alt="logo-3" width="40px">
+          </div>
+          <div class="text-card hero">
+            <h5>Money-Back Guarantee</h5>
+            <p>
+              If an item arrived damaged or you've
+              changed your mind, you can send it
+              back for a full refund.
+            </p>
+          </div>
+        </div>
+        <div class="card col-lg-3">
+          <div class="imges">
+            <img src="img/icon-header/icon-header3.svg" alt="logo-1" width="40px">
+          </div>
+          <div class="text-card">
+            <h5>Finest Quality</h5>
+            <p>
+              Designed to last, each of our products has
+              been crafted with the finest materials.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End cmponet  -->
+  <!-- Start cards  -->
+  <section class="cards">
+    <div class="container">
+      <div class="head">
+        <p>Products in today</p>
+      </div>
+      <div class="swiper" >
+        <div class="slide-container2">
+          <div class="card-wrapper swiper-wrapper">
+            <div class="card swiper-slide">
+              <div class="image-box">
+                <img src="img/salery/img3.png" alt="pic-3" class="img-fluid" />
+              </div>
+              <div class="profile-details">
+                <div class="name-job">
+                  <p class="name">Basic Slim Fit T-Shirt</p>
+                  <p class="job">$ 79.99</p>
+                </div>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="image-box">
+                <img src="img/salery/img4.png" alt="pic-4" class="img-fluid"/>
+              </div>
+              <div class="profile-details">
+                <div class="name-job">
+                  <p class="name">Loose Textured T-Shirt</p>
+                  <p class="job">$ 119.99</p>
+                </div>
+              </div>
+            </div>
+            <div class="card swiper-slide" onclick="window.location.href='product.html';">
+              <div class="image-box">
+                <img src="img/salery/img1.png" alt="pic-1" class="img-fluid"/>
+                <span class="btn rounded-5">30%</span>
+              </div>
+              <div class="profile-details">
+                <div class="name-job">
+                  <p>T-Shirt Summer Vibes</p>
+                  <p class="name job">
+                    <span class="pric me-2"> $ 89.99 </span>
+                    <span class="del">$ 119.99</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="image-box">
+                <img src="img/salery/img2.png" alt="pic-2" class="img-fluid"/>
+              </div>
+              <div class="profile-details">
+                <div class="name-job">
+                  <p class="name">Loose Knit 3/4 Sleeve</p>
+                  <p class="job">$ 119.99</p>
+                </div>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="image-box">
+                <img src="img/salery/img3.png" alt="pic-3" class="img-fluid" />
+              </div>
+              <div class="profile-details">
+                <div class="name-job">
+                  <p class="name">Basic Slim Fit T-Shirt</p>
+                  <p class="job">$ 79.99</p>
+                </div>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="image-box">
+                <img src="img/salery/img4.png" alt="pic-4" class="img-fluid"/>
+              </div>
+              <div class="profile-details">
+                <div class="name-job">
+                  <p class="name">Loose Textured T-Shirt</p>
+                  <p class="job">$ 119.99</p>
+                </div>
+              </div>
+            </div>
+            <div class="card swiper-slide" onclick="window.location.href='product.html';">
+              <div class="image-box">
+                <img src="img/salery/img1.png" alt="pic-1" class="img-fluid"/>
+                <span class="btn rounded-5">30%</span>
+              </div>
+              <div class="profile-details">
+                <div class="name-job">
+                  <p>T-Shirt Summer Vibes</p>
+                  <p class="name job">
+                    <span class="pric me-2"> $ 89.99 </span>
+                    <span class="del">$ 119.99</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="image-box">
+                <img src="img/salery/img2.png" alt="pic-2" class="img-fluid"/>
+              </div>
+              <div class="profile-details">
+                <div class="name-job">
+                  <p class="name">Loose Knit 3/4 Sleeve</p>
+                  <p class="job">$ 119.99</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End cards  -->
+<!-- Start concat -->
+  <sectoin class="concat">
+    <div class="container">
+      <div class="text-concat">
+        <p class="text-white">
+          Subscribe to our newsletter and <br>
+          receive exclusive offers every week
+        </p>
+      </div>
+      <div class="forms">
+        <form action="">
+          <input type="email" name="mail" id="mail" placeholder="Enter your email" class="form-control-sm" required>
+          <button class="btn text-white mt-3 mt-lg-0">Subscribe</button>
+        </form>
+      </div>
+    </div>
+
+  </sectoin>
+<!-- End concat -->
+<!-- Start decripion -->
+<section class="decripion">
+  <div class="container">
+    <div class="box1">
+      <div class="logo">
+        <div class="img">
+          <img src="img/logo2.png" alt="logo pic" class="im">
+        </div>
+        <div class="text-logo">
+        <p><span>E-</span>Shop</p>
+        </div>
+      </div>
+      <div class="text">
+        <p>
+          House My Brand designs clothing for the young, the old & <br>
+          everyone in between - but most importantly, for the fashionable
+        </p>
+      </div>
+      <div class="socil-medie d-flex gap-3">
+        <div class="icon"><i class="fa-brands fa-facebook"></i></div>
+        <div class="icon"><i class="fa-brands fa-twitter"></i></div>
+        <div class="icon"><i class="fa-brands fa-instagram"></i></div>
+        <div class="icon"><i class="fa-brands fa-youtube"></i></div>
+      </div>
+    </div>
+    <div class="box">
+      <h6>Shopping online</h6>
+      <div class="btns">
+        <a href="#" class="btn">Order Status</a>
+        <a href="#" class="btn">Shipping and Delivery</a>
+        <a href="#" class="btn">Returns</a>
+        <a href="#" class="btn">Payment Options</a>
+        <a href="#" class="btn">Contact Us</a>
+      </div>
+    </div>
+    <div class="box">
+      <h6>Information</h6>
+      <div class="btns">
+        <a href="#" class="btn">Gift Cards</a>
+        <a href="#" class="btn">Find a store</a>
+        <a href="#" class="btn">Newsletter</a>
+        <a href="#" class="btn">Bacome a member</a>
+        <a href="#" class="btn">Site feedback</a>
+      </div>
+    </div>
+    <div class="box">
+      <h6>Contact</h6>
+      <div class="btns">
+        <a href="mailtO:store@uikit.com" class="btn">store@uikit.com</a>
+        <a href="Tel:+1 131 138 138" class="btn">Hotline: +1 131 138 138</a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Start footer -->
+  <footer>
+    <hr>
+    <div class="container">
+      <p>DESIGN BY ICEO.CO - © 2019. ALL RIGHTS RESERVED.</p>
+    </div>
+  </footer>
+<!-- End footer -->
+<!-- goUp -->
+<button id="goUp" class="btnPrimary  position-fixed end-0 bottom-0  mb-4 me-5 d-none">
+  <a href="#"><i class="fa-solid fa-arrow-up "></i></a>
+</button>
+<!-- Modal -->
+<div class="modal fade pb-3" id="login" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <button type="button" class="btn-close ms-auto me-4 mt-4" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="container w-75">
+        <div class="modal-header">
+          <h1 class="modal-title fs-1 " id="staticBackdropLabel">Log in</h1>
+          <p>Lorem Ipsum is simply dummy text of the printing</p>
+        </div>
+        <div class="modal-body">
+          <form action="">
+            <input type="email" name="mail" id="mail" placeholder="E-mail" class="form-control mb-2 mb-lg-3 rounded-5 p-1 p-lg-3" required>
+            <input type="password" name="pass" id="pass" placeholder="Password" class="form-control mb-2 mb-lg-3 rounded-5 p-lg-3" required>
+            <div class="revew d-flex justify-content-between align-items-center mb-2 mb-lg-3 flex-wrap">
+              <div class="keep">
+                <input type="checkbox" name="keep" id="keep">
+                <label for="keep" class="fs-.1 ms-2">Keep me signed in</label>
+              </div>
+              <div class="text-revew mt-2 mt-lg-3 fs-.5 pass"  data-bs-toggle="modal" data-bs-target="#password">
+                <p>Forgot password?</p>
+              </div>
+            </div>
+            <div class="soicl-meddie mb-2 mb-lg-3">
+              <a href="http://Facebook.com" class="text-decoration-none facebook d-flex g-3 align-items-center justify-content-between">
+                <i class="fa-brands fa-facebook me-2"></i>
+                Facebook
+              </a>
+              <a href="http://Gmail.com" class=" text-decoration-none  gmail d-flex  align-items-center justify-content-evenly">
+                <i class="fa-regular fa-envelope "></i>
+                Gmail
+              </a>
+            </div>
+            <button class="btn form-control sign">Sign in</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <p class="me-auto">Not a member yet?</p>
+          <p class="btn sign-up" data-bs-toggle="modal" data-bs-target="#sign-up">Sign up</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- sign-up -->
+<div class="modal fade pb-3" id="sign-up" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content ">
+      <button type="button" class="btn-close ms-auto me-4 mt-3" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="container w-75">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5 w-75 text-center" id="staticBackdropLabel">
+            Create an account and discover the benefits
+          </h1>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+          </p>
+        </div>
+        <div class="modal-body">
+          <form action="">
+            <input type="text" name="first-user" id="first-user" placeholder="First Name" class="form-control  mb-3 rounded-5 p-1 p-lg-2" required>
+            <input type="text" name="last-user" id="last-user" placeholder="Last Name" class="form-control mb-3 rounded-5 p-1 p-lg-2" required>
+            <input type="email" name="mail" id="mail" placeholder="E-mail" class="form-control mb-3 rounded-5 p-1 p-lg-2" required>
+            <input type="password" name="pass" id="pass" placeholder="Password" class="form-control  mb-3 rounded-5 p-1 p-lg-2" required>
+            <div class="revew d-flex justify-content-between align-items-center  mb-3 p-1 p-lg-2">
+              <div class="keep-2">
+                <input type="checkbox" name="keep" id="keep" class="">
+                <label for="keep" class="  concat">I agree to the Google Terms of Service and
+                  Privacy PolicyKeep me signed in</label>
+              </div>
+            </div>
+            <button class="btn form-control sign">Sign up</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <p class="member">Are you already a member?</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- password -->
+<div class="modal fade pb-5" id="password" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content ">
+      <button type="button" class="btn-close ms-auto me-4 mt-3" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="container w-75">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5 w-75 text-center" id="staticBackdropLabel">
+            Forgot your password?
+          </h1>
+          <p>
+            Enter your email or phone number 
+            and recover your account
+          </p>
+        </div>
+        <div class="modal-body">
+          <form action="">
+            <input type="email" name="mail" id="mail" placeholder="E-mail" class="form-control mb-3 rounded-5 p-lg-3" required>
+            <p class="liner">OR</p>
+            <div class="phone">
+              <input type="tel" name="phone"  id="phone"  placeholder="Phone number" required>
+            </div>
+            <button class="btn form-control sign pb-3 mb-3">Reset password</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END Modal -->
+<!-- Button trigger modal -->
+<script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/intlTelInput.min.js"></script>
+<script>
+  const input = document.querySelector("#phone");
+  window.intlTelInput(input, {
+    utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js",
+  });
+</script>
+  <script src="js/swiper-bundle.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/car.js"></script>
+  <script src="js/min.js"></script>
+</body>
+</html>

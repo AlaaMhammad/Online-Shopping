@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./img/logo-web.png" type="image/x-icon">
+  <title>Online Shopping</title>
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/swiper-bundle.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/css/intlTelInput.css">
+  <link rel="stylesheet" href="css/min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-- start header -->
+  <header>
+    <nav class="navbar navbar-expand-lg mt-3 fixed-top pt-5 pt-lg-3 mt-auto">
+      <div class="container position-relative">
+        <img src="img/logo2.png" alt="logo" class="me-lg-3 img2">
+        <a class="navbar-brand" href="home.html"><span>E-</span>Shop</a>
+        <button class="navbar-toggler ms-auto " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon "></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto me-auto mb-lg-0 ">
+            <li class="nav-item">
+              <a class="nav-link men me-lg-3" aria-current="page" >Men</a>
+            </li>
+            <li class="nav-item mb-3 mb-lg-0">
+              <a class="nav-link  me-lg-3" href="#">Women</a>
+            </li>
+            <li class="nav-item mb-3 mb-lg-0">
+              <a class="nav-link  me-lg-3" href="#">Kids</a>
+            </li>
+          </ul>
+          <i class="fa-solid fa-user  position-absolute end-0 "  data-bs-toggle="modal" data-bs-target="#login"></i>
+        </div>
+        <div class=" icon  ">
+          <i class="fa-solid fa-magnifying-glass me-3  pointer-event"></i>
+          <i class="fa-solid fa-cart-shopping me-lg-4  pointer-event"></i>
+          <div class="number-icon translate-middle">0</div>
+        </div>
+      </div>
+    </nav>
+  </header>
+<!-- End header -->
+<!-- start menu -->
+  <menu>
+    <div class="container">
+      <div class="menu-boxs">
+        <div class="box">
+          <div class="btns">
+            <a href="#" class="btn"><h4>Sale</h4></a>
+            <a href="#" class="btn"><h4>Bestsellers</h4></a>
+            <a href="#" class="btn"><h4>Latest Arrivals</h4></a>
+          </div>
+        </div>
+        <div class="box">
+          <h6>Shoese</h6>
+          <div class="btns">
+            <a href="#" class="btn">Lifestyle</a>
+            <a href="#" class="btn">Running</a>
+            <a href="#" class="btn">Soccer</a>
+            <a href="#" class="btn">Basketball</a>
+            <a href="#" class="btn">Football</a>
+            <a href="#" class="btn">Golf</a>
+            <a href="#" class="btn">Baseball</a>
+          </div>
+        </div>
+        <div class="box">
+          <h6>Clothing</h6>
+          <div class="btns">
+            <a href="#" class="btn">Pants</a>
+            <a href="#" class="btn">Hoodies & Sweatshirts</a>
+            <a href="#" class="btn">Jackets & Vests</a>
+            <a href="#" class="btn">Track Suits</a>
+            <a href="#" class="btn">Short Sleeve Shirts</a>
+            <a href="#" class="btn">T-Shirts</a>
+            <a href="#" class="btn">Jerseys</a>
+            <a href="#" class="btn">Shorts</a>
+            <a href="#" class="btn">Jeans</a>
+          </div>
+        </div>
+        <div class="box">
+          <h6>Accesorries</h6>
+          <div class="btns">
+            <a href="#" class="btn">Backpacks</a>
+            <a href="#" class="btn">Caps & Hats</a>
+            <a href="#" class="btn">Watches</a>
+            <a href="#" class="btn">Belts</a>
+            <a href="#" class="btn">Bags</a>
+            <a href="#" class="btn">Wallets & Cases</a>
+            <a href="#" class="btn">Scarves</a>
+            <a href="#" class="btn">Glasses</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </menu>
+<!-- End menu -->
+<!-- Start add car  -->
+  <div class="car" id="car">
+    <div class="container">
+      <div class="head-tittle mt-5">
+        <h3>Shopping Cart</h3>
+        <div class="icons">
+          <img src="img/active shop.png" alt="logo" class="img-fluid logo1">
+          <img src="img/noun_delivery_1665162.png" alt="logo" class=" logo2">
+        </div>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Color</th>
+            <th>Size</th>
+            <th>Ammount</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+      <div class="footer">
+        <div class="prev-shoping">
+          <a href="product.html" class="text-black">
+          <i class="fa-solid fa-arrow-left"></i>
+        </a>
+          <p>Continue Shopping</p>
+        </div>
+        <div class="code">
+          <form action="">
+            <input type="text" placeholder="Promo Code" required >
+            <button class="btn send"><i class="fa-solid fa-paper-plane"></i></button>
+          </form>
+        </div>
+        <div class="pric-totle">
+          <p>Total cost :</p>
+          <p>$<span class="totle"></span> </p>
+        </div>
+        <div class="delt">
+          <button type="button" class="btn del" id="deleteAllcar">CHECKOUT</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- End add car  -->
+<!-- Start cart -->
+<sectoin class="cart">
+  <div class="container">
+    <div class="box1">
+      <div class="head">
+        <div class="logo">
+        <a href="home.html"><i class="fa-solid fa-house-chimney"></i></a>
+        </div>
+        <div class="title">
+          <p>
+            <span>/</span>
+            Men`s Tops
+            <span>/</span>
+            T-Shirt
+            <span>/</span>
+            <span class="active">T-Shirt Summer Vibes</span>
+          </p>
+        </div>
+      </div>
+      <div class="single-pro-img">
+        <div class="small-img-group">
+          <div class="small-img-col">
+            <img src="img/prodect/small-img-group/img1.svg" alt="pic-1" width="100%" id="small-img">
+          </div>
+          <div class="small-img-col">
+            <img src="img/prodect/small-img-group/img2.svg" alt="pic-2" width="100%" id="small-img">
+          </div>
+          <div class="small-img-col">
+            <img src="img/prodect/small-img-group/img3.svg" alt="pic-3" width="100%" id="small-img">
+          </div>
+          <div class="small-img-col">
+            <img src="img/prodect/small-img-group/img4.svg" alt="pic-4" width="100%" id="small-img">
+          </div>
+        </div>
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/prodect/small-img-group/img1.svg" alt="img" width="80%" id="MainImg" class="d-block w-100" >
+            </div>
+            <div class="carousel-item">
+              <img src="img/prodect/small-img-group/img2.svg" alt="img" width="80%" id="MainImg" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+              <img src="img/prodect/small-img-group/img3.svg" alt="img" width="80%" id="MainImg" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+              <img src="img/prodect/small-img-group/img4.svg" alt="img" width="80%" id="MainImg" class="d-block w-100">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="box2">
+      <div class="head">
+        <div class="card-head ">
+          <img src="img/prodect/img-head/logo1.svg" alt="logo1" class="img-fluid">
+          <div class="text">
+            <h6>Standard shipment</h6>
+            <p>Free within 3-6 business days</p>
+          </div>
+        </div>
+        <div class="card-head ">
+          <img src="img/prodect/img-head/logo2.svg" alt="logo2" class="img-fluid">
+          <div class="text">
+            <h6>Express delivery</h6>
+            <p>$35,00 available</p>
+          </div>
+        </div>
+      </div>
+      <div class="single-pro-details">
+        <div class="sale">
+          <button class="btn rounded-5">SALE</button>
+          <p>
+            Product ID: <br>
+            261311
+          </p>
+        </div>
+        <div class="tittle">
+          <p>T-Shirt Summer Vibes</p>
+        </div>
+        <div class="pric-title">
+          <p >
+            <span class="pric">$ <span class="pric pricNum">89.99</span> </span>
+            <del>$ 119.99</del>
+          </p>
+          <p>HOUSE MY BRAND</p>
+        </div>
+        <div class="colors">
+          <p>Color:</p>
+          <div class="colors-group">
+            <div class="box" id="black">
+              <div class="color1"></div>
+              <img src="" alt="">
+            </div>
+            <div class="box" id="beige">
+              <div class="color2"></div>
+              <img src="" alt="">
+            </div>
+            <div class="box" id="blue">
+              <div class="color3"></div>
+              <img src="" alt="">
+            </div>
+            <div class="box" id="white">
+              <div class="color4"></div>
+              <img src="" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="size">
+          <p>Size:</p>
+          <div class="size-group">
+            <form action="" class="needs-validation" novalidate>
+              <select name="size" id="size" class="bttn"  required id="validationTooltip" >
+                <option hidden selected class="cheked">CHOOSE SIZE</option>
+                  <option value="sm">sm</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XXL</option>
+                  <option value="XXXL">XXXL</option>
+                  <option value="XXXXL">XXXXL</option>
+                </select>
+                <div class="invalid-tooltip">
+                  Please select a valid state.
+                </div>
+            </form>
+          </div>
+        </div>
+        <div class="quantity">
+          <p>Quantity:</p>
+          <div class="quantity-group">
+            <div class="box">
+              <button class="pre btn">-</button>
+              <div class="cunter">1</div>
+              <button class="next btn">+</button>
+            </div>
+            <button class="btn add" type="submit">Add to cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</sectoin>
+<!-- End cart -->
+<!-- Start NAV&TAB -->
+<section class="nav-tab mt-5 ">
+  <div class="container">
+    <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active " id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Description</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Reviews (2)</button>
+      </li>
+    </ul>
+    <div class="tab-content" id="pills-tabContent">
+      <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"tabindex="0">
+        <div class="description">
+          <div class="details">
+            <img src="img/prodect/nav-tab-img/description-img.png" alt="img-2">
+            <div class="text-details">
+              <h6>Details and product description</h6>
+              <p>
+                White Summer Vibes T-shirt in the uiKit line with a colorful print.
+                Made of jersey cotton. T-shirt fits perfectly with jeans, pants or shorts.
+              </p>
+            </div>
+          </div>
+          <div class="material">
+            <img src="img/prodect/nav-tab-img/material-img.png" alt="img-2">
+            <div class="text-material">
+              <h6>Material(s) and care</h6>
+              <div class="icon-material">
+                <p>Body: 98% COTTON - 2% ELASTANE</p>
+                <img src="img/prodect/nav-tab-img/icon.png" alt="icon">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+        <div class="opinion">
+          <div class="level">
+            <div class="star">
+              <div class="number-star">
+                <h2>4.5</h2>
+                <div class="group-star">
+                  <img src="img/prodect/nav-tab-img/start1.png" alt="icon">
+                  <img src="img/prodect/nav-tab-img/start1.png" alt="icon">
+                  <img src="img/prodect/nav-tab-img/start1.png" alt="icon">
+                  <img src="img/prodect/nav-tab-img/start1.png" alt="icon">
+                  <img src="img/prodect/nav-tab-img/start1.png" alt="icon">
+                  <img src="img/prodect/nav-tab-img/star2.png" alt="icon2">
+                </div>
+                <div class="gruop-text">
+                  <img src="img/prodect/nav-tab-img/noun_profile_1287413.png" alt="icon-logn">
+                  <p>81 all opinions</p>
+                </div>
+              </div>
+              <div class="color-star">
+                <div class="width">
+                  <img src="img/prodect/nav-tab-img/start1.png" alt="icon">
+                  <p>1</p>
+                  <div class="color">
+                  </div>
+                </div>
+                <div class="width">
+                  <img src="img/prodect/nav-tab-img/start1.png" alt="icon">
+                  <p>2</p>
+                  <div class="color">
+                  </div>
+                </div>
+                <div class="width">
+                  <img src="img/prodect/nav-tab-img/star2.png" alt="icon">
+                  <p>3</p>
+                  <div class="color">
+                    <div class="col-3"></div>
+                  </div>
+                </div>
+                <div class="width">
+                  <img src="img/prodect/nav-tab-img/star2.png" alt="icon">
+                  <p>4</p>
+                  <div class="color">
+                    <div class="col-4"></div>
+                  </div>
+                </div>
+                <div class="width">
+                  <img src="img/prodect/nav-tab-img/star2.png" alt="icon">
+                  <p>5</p>
+                  <div class="color">
+                    <div class="col-5"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="comments">
+              <div class="box-comment">
+                <img src="img/prodect/nav-tab-img/Ellipse 135.png" alt="img-1">
+                <div class="text-comment">
+                  <h6>John Doe</h6>
+                  <div class="group-star">
+                    <img src="img/prodect/nav-tab-img/start1.png" alt="icon">
+                    <img src="img/prodect/nav-tab-img/start1.png" alt="icon">
+                    <img src="img/prodect/nav-tab-img/start1.png" alt="icon">
+                    <img src="img/prodect/nav-tab-img/start1.png" alt="icon">
+                    <img src="img/prodect/nav-tab-img/start1.png" alt="icon">
+                    <img src="img/prodect/nav-tab-img/star2.png" alt="icon2">
+                  </div>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                  </p>
+                </div>
+              </div>
+              <div class="box-comment">
+                <img src="img/prodect/nav-tab-img/Ellipse 136.png" alt="img-1">
+                <div class="text-comment">
+                  <h6>Eveline Gosok</h6>
+                  <div class="group-star">
+                    <img src="img/prodect/nav-tab-img/start1.png" alt="icon">
+                    <img src="img/prodect/nav-tab-img/start1.png" alt="icon">
+                    <img src="img/prodect/nav-tab-img/start1.png" alt="icon">
+                    <img src="img/prodect/nav-tab-img/start1.png" alt="icon">
+                    <img src="img/prodect/nav-tab-img/start1.png" alt="icon">
+                    <img src="img/prodect/nav-tab-img/star2.png" alt="icon2">
+                  </div>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                  </p>
+                </div>
+              </div>
+              <div class="box-comment">
+                <img src="img/prodect/nav-tab-img/Ellipse 137.png" alt="img-1">
+                <div class="text-comment">
+                  <h6>Anne Okombo</h6>
+                  <div class="group-star">
+                    <img src="img/prodect/nav-tab-img/start1.png" alt="icon">
+                    <img src="img/prodect/nav-tab-img/start1.png" alt="icon">
+                    <img src="img/prodect/nav-tab-img/start1.png" alt="icon">
+                    <img src="img/prodect/nav-tab-img/start1.png" alt="icon">
+                    <img src="img/prodect/nav-tab-img/start1.png" alt="icon">
+                    <img src="img/prodect/nav-tab-img/star2.png" alt="icon2">
+                  </div>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="btn addOpinion">ADD OPINION</button>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End NAV&TAB -->
+<!-- Start salery  -->
+<section class="salery">
+  <div class="container">
+    <div class="head">
+      <p>Selected just for you</p>
+      <button class="btn bg-white border-black px-2 rounded-5">Show more</button>
+    </div>
+  <div class="swiper sw2" >
+    <div class="slide-container">
+      <div class="card-wrapper swiper-wrapper">
+        <div class="card swiper-slide" onclick="window.location.href='product.html';">
+          <div class="image-box">
+            <img src="img/salery/img1.png" alt="pic-1" class="img-fluid"/>
+            <span class="btn rounded-5">30%</span>
+          </div>
+          <div class="profile-details">
+            <div class="name-job">
+              <p>T-Shirt Summer Vibes</p>
+              <p class="name job">
+                <span class="pric me-2"> $ 89.99 </span>
+                <span class="del">$ 119.99</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card swiper-slide">
+          <div class="image-box">
+            <img src="img/salery/img2.png" alt="pic-2" class="img-fluid"/>
+          </div>
+          <div class="profile-details">
+            <div class="name-job">
+              <p class="name">Loose Knit 3/4 Sleeve</p>
+              <p class="job">$ 119.99</p>
+            </div>
+          </div>
+        </div>
+        <div class="card swiper-slide">
+          <div class="image-box">
+            <img src="img/salery/img3.png" alt="pic-3" class="img-fluid" />
+          </div>
+          <div class="profile-details">
+            <div class="name-job">
+              <p class="name">Basic Slim Fit T-Shirt</p>
+              <p class="job">$ 79.99</p>
+            </div>
+          </div>
+        </div>
+        <div class="card swiper-slide">
+          <div class="image-box">
+            <img src="img/salery/img4.png" alt="pic-4" class="img-fluid"/>
+          </div>
+          <div class="profile-details">
+            <div class="name-job">
+              <p class="name">Loose Textured T-Shirt</p>
+              <p class="job">$ 119.99</p>
+            </div>
+          </div>
+        </div>
+        <div class="card swiper-slide" onclick="window.location.href='product.html';">
+          <div class="image-box">
+            <img src="img/salery/img1.png" alt="pic-1" class="img-fluid"/>
+            <span class="btn rounded-5">30%</span>
+          </div>
+          <div class="profile-details">
+            <div class="name-job">
+              <p>T-Shirt Summer Vibes</p>
+              <p class="name job">
+                <span class="pric me-2"> $ 89.99 </span>
+                <span class="del">$ 119.99</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card swiper-slide">
+          <div class="image-box">
+            <img src="img/salery/img2.png" alt="pic-2" class="img-fluid"/>
+          </div>
+          <div class="profile-details">
+            <div class="name-job">
+              <p class="name">Loose Knit 3/4 Sleeve</p>
+              <p class="job">$ 119.99</p>
+            </div>
+          </div>
+        </div>
+        <div class="card swiper-slide">
+          <div class="image-box">
+            <img src="img/salery/img3.png" alt="pic-3" class="img-fluid" />
+          </div>
+          <div class="profile-details">
+            <div class="name-job">
+              <p class="name">Basic Slim Fit T-Shirt</p>
+              <p class="job">$ 79.99</p>
+            </div>
+          </div>
+        </div>
+        <div class="card swiper-slide">
+          <div class="image-box">
+            <img src="img/salery/img4.png" alt="pic-4" class="img-fluid"/>
+          </div>
+          <div class="profile-details">
+            <div class="name-job">
+              <p class="name">Loose Textured T-Shirt</p>
+              <p class="job">$ 119.99</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-button-next swiper-navBtn "></div>
+    <div class="swiper-button-prev swiper-navBtn"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+<!-- End salery  -->
+<!-- Start concat -->
+  <sectoin class="concat">
+    <div class="container">
+      <div class="text-concat">
+        <p class="text-white">
+          Subscribe to our newsletter and <br>
+          receive exclusive offers every week
+        </p>
+      </div>
+      <div class="forms">
+        <form action="">
+          <input type="email" name="mail" id="mail" placeholder="Enter your email" class="form-control-sm" required>
+          <button class="btn text-white ">Subscribe</button>
+        </form>
+      </div>
+    </div>
+
+  </sectoin>
+
+<!-- End concat -->
+<!-- Start decripion -->
+  <section class="decripion">
+    <div class="container">
+      <div class="box1">
+        <div class="logo">
+          <div class="img">
+            <img src="img/logo2.png" alt="logo pic" class="im">
+          </div>
+          <div class="text-logo">
+          <p><span>E-</span>Shop</p>
+          </div>
+        </div>
+        <div class="text">
+          <p>
+            House My Brand designs clothing for the young, the old & <br>
+            everyone in between - but most importantly, for the fashionable
+          </p>
+        </div>
+        <div class="socil-medie d-flex gap-3">
+          <div class="icon"><i class="fa-brands fa-facebook"></i></div>
+          <div class="icon"><i class="fa-brands fa-twitter"></i></div>
+          <div class="icon"><i class="fa-brands fa-instagram"></i></div>
+          <div class="icon"><i class="fa-brands fa-youtube"></i></div>
+        </div>
+      </div>
+      <div class="box">
+        <h6>Shopping online</h6>
+        <div class="btns">
+          <a href="#" class="btn">Order Status</a>
+          <a href="#" class="btn">Shipping and Delivery</a>
+          <a href="#" class="btn">Returns</a>
+          <a href="#" class="btn">Payment Options</a>
+          <a href="#" class="btn">Contact Us</a>
+        </div>
+      </div>
+      <div class="box">
+        <h6>Information</h6>
+        <div class="btns">
+          <a href="#" class="btn">Gift Cards</a>
+          <a href="#" class="btn">Find a store</a>
+          <a href="#" class="btn">Newsletter</a>
+          <a href="#" class="btn">Bacome a member</a>
+          <a href="#" class="btn">Site feedback</a>
+        </div>
+      </div>
+      <div class="box">
+        <h6>Contact</h6>
+        <div class="btns">
+          <a href="mailtO:store@uikit.com" class="btn">store@uikit.com</a>
+          <a href="Tel:+1 131 138 138" class="btn">Hotline: +1 131 138 138</a>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- Start footer -->
+  <footer>
+    <hr>
+    <div class="container">
+      <p>DESIGN BY ICEO.CO - © 2019. ALL RIGHTS RESERVED.</p>
+    </div>
+  </footer>
+<!-- End footer -->
+<!-- goUp -->
+<button id="goUp" class="btnPrimary  position-fixed end-0 bottom-0  mb-4 me-5 d-none">
+  <a href="#"><i class="fa-solid fa-arrow-up "></i></a>
+</button>
+<!-- Modal -->
+<div class="modal fade pb-3" id="login" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <button type="button" class="btn-close ms-auto me-4 mt-4" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="container w-75">
+        <div class="modal-header">
+          <h1 class="modal-title fs-1 " id="staticBackdropLabel">Log in</h1>
+          <p>Lorem Ipsum is simply dummy text of the printing</p>
+        </div>
+        <div class="modal-body">
+          <form action="">
+            <input type="email" name="mail" id="mail" placeholder="E-mail" class="form-control mb-2 mb-lg-3 rounded-5 p-1 p-lg-3" required>
+            <input type="password" name="pass" id="pass" placeholder="Password" class="form-control mb-2 mb-lg-3 rounded-5 p-lg-3" required>
+            <div class="revew d-flex justify-content-between align-items-center mb-2 mb-lg-3 flex-wrap">
+              <div class="keep">
+                <input type="checkbox" name="keep" id="keep">
+                <label for="keep" class="fs-.1 ms-2">Keep me signed in</label>
+              </div>
+              <div class="text-revew mt-2 mt-lg-3 fs-.5 pass"  data-bs-toggle="modal" data-bs-target="#password">
+                <p>Forgot password?</p>
+              </div>
+            </div>
+            <div class="soicl-meddie mb-2 mb-lg-3">
+              <a href="http://Facebook.com" class="text-decoration-none facebook d-flex g-3 align-items-center justify-content-between">
+                <i class="fa-brands fa-facebook me-2"></i>
+                Facebook
+              </a>
+              <a href="http://Gmail.com" class=" text-decoration-none  gmail d-flex  align-items-center justify-content-evenly">
+                <i class="fa-regular fa-envelope "></i>
+                Gmail
+              </a>
+            </div>
+            <button class="btn form-control sign">Sign in</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <p class="me-auto">Not a member yet?</p>
+          <p class="btn sign-up" data-bs-toggle="modal" data-bs-target="#sign-up">Sign up</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- sign-up -->
+<div class="modal fade pb-3" id="sign-up" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content ">
+      <button type="button" class="btn-close ms-auto me-4 mt-3" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="container w-75">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5 w-75 text-center" id="staticBackdropLabel">
+            Create an account and discover the benefits
+          </h1>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+          </p>
+        </div>
+        <div class="modal-body">
+          <form action="">
+            <input type="text" name="first-user" id="first-user" placeholder="First Name" class="form-control  mb-3 rounded-5 p-1 p-lg-2" required>
+            <input type="text" name="last-user" id="last-user" placeholder="Last Name" class="form-control mb-3 rounded-5 p-1 p-lg-2" required>
+            <input type="email" name="mail" id="mail" placeholder="E-mail" class="form-control mb-3 rounded-5 p-1 p-lg-2" required>
+            <input type="password" name="pass" id="pass" placeholder="Password" class="form-control  mb-3 rounded-5 p-1 p-lg-2" required>
+            <div class="revew d-flex justify-content-between align-items-center  mb-3 p-1 p-lg-2">
+              <div class="keep-2">
+                <input type="checkbox" name="keep" id="keep" class="">
+                <label for="keep" class="  concat">I agree to the Google Terms of Service and
+                  Privacy PolicyKeep me signed in</label>
+              </div>
+            </div>
+            <button class="btn form-control sign">Sign up</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <p class="member">Are you already a member?</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- password -->
+<div class="modal fade pb-5" id="password" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content ">
+      <button type="button" class="btn-close ms-auto me-4 mt-3" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="container w-75">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5 w-75 text-center" id="staticBackdropLabel">
+            Forgot your password?
+          </h1>
+          <p>
+            Enter your email or phone number 
+            and recover your account
+          </p>
+        </div>
+        <div class="modal-body">
+          <form action="">
+            <input type="email" name="mail" id="mail" placeholder="E-mail" class="form-control mb-3 rounded-5 p-lg-3" required>
+            <p class="liner">OR</p>
+            <div class="phone">
+              <input type="tel" name="phone"  id="phone"  placeholder="Phone number" required>
+            </div>
+            <button class="btn form-control sign pb-3 mb-3">Reset password</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END Modal -->
+<script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/intlTelInput.min.js"></script>
+  <script src="js/swiper-bundle.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/product.js"></script>
+  <script>
+// tel numbers
+    const input = document.querySelector("#phone");
+  window.intlTelInput(input, {
+    utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js",
+  });
+// Cart
+  var MainImg = document.querySelector("#MainImg"),
+  activeMainImg = document.querySelectorAll(".carousel-indicators button"),
+  smallImg =document.querySelectorAll("#small-img"),
+  colors = document.querySelectorAll(".colors-group .box");
+  colors[0].onclick = _=>{
+    MainImg.src = smallImg[1].src;
+    colors[1].classList.remove("active");
+    colors[2].classList.remove("active");
+    colors[3].classList.remove("active");
+    colors[0].classList.add("active");
+    // paganaion
+    activeMainImg[1].classList.remove("active");
+    activeMainImg[2].classList.remove("active");
+    activeMainImg[3].classList.remove("active");
+    activeMainImg[0].classList.add("active");
+  }
+  colors[1].onclick = _=>{
+    MainImg.src = smallImg[2].src;
+    colors[0].classList.remove("active");
+    colors[2].classList.remove("active");
+    colors[3].classList.remove("active");
+    colors[1].classList.add("active");
+    //paganaion
+    activeMainImg[0].classList.remove("active");
+    activeMainImg[2].classList.remove("active");
+    activeMainImg[3].classList.remove("active");
+    activeMainImg[1].classList.add("active");
+  }
+  colors[2].onclick = _=>{
+    MainImg.src = smallImg[3].src;
+    colors[0].classList.remove("active");
+    colors[1].classList.remove("active");
+    colors[3].classList.remove("active");
+    colors[2].classList.add("active");
+    //paganaion
+    activeMainImg[0].classList.remove("active");
+    activeMainImg[1].classList.remove("active");
+    activeMainImg[3].classList.remove("active");
+    activeMainImg[2].classList.add("active");
+  }
+  colors[3].onclick = _=>{
+    MainImg.src = smallImg[0].src;
+    colors[0].classList.remove("active");
+    colors[1].classList.remove("active");
+    colors[2].classList.remove("active");
+    colors[3].classList.add("active");
+    //paganaion
+    activeMainImg[0].classList.remove("active");
+    activeMainImg[1].classList.remove("active");
+    activeMainImg[2].classList.remove("active");
+    activeMainImg[3].classList.add("active");
+  }
+  for (let i = 0; i < smallImg.length; i++) {
+    smallImg[i].onclick = _=>{
+    MainImg.src = smallImg[i].src;
+  }
+  }
+  </script>
+</body>
+</html>
